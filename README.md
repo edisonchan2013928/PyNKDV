@@ -2,8 +2,10 @@
 
 Network kernel density visualization (NKDV) has been widely used in different applications, including traffic/traffic accident hotspot detection and crime hotspot detection. Therefore, many software packages, e.g., spNetwork (an R package) and SANET (a plugin for QGIS/ArcGIS), can also support this tool. However, all these software packages are based on the naïve implementation, which are not scalable to large-scale datasets. To overcome this weakness, we propose this python library, called PyNKDV [1], which is based on our state-of-the-art solution (ADA) [8]. PyNKDV can significantly improve the efficiency for generating NKDV compared with existing software packages.
 
-# Use Cases of PyNKDV
-++TODO: add some figures for showing the crime/traffic accident hotspots in different datasets and explanations++
+# Usage of PyNKDV
+Our PyNKDV library can clearly show hotspots in the commonly used geographic information systems, including QGIS and ArcGIS. In Figure XX, we show the hotspot map in the Mission District of San Francisco using the 311-call location dataset.
+
+<p align="center"><img width="849" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_Street_level"></p>
 
 # Installation Guidelines
 ++TODO: add details++
