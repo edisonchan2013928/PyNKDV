@@ -5,6 +5,12 @@ Network kernel density visualization (NKDV) has been widely used in different ap
 # Usage of PyNKDV
 Our PyNKDV library can clearly show hotspots in the commonly used geographic information systems, including QGIS and ArcGIS. In Figure 1, we show the hotspot map (based on NKDV) for the 311-call location dataset in San Francisco using QGIS. Compared with the scatter plot (cf. Figure 1a), we can clearly observe that there are two 311-call hotspot regions in San Francisco (cf. Figure 1b).
 
+<p align="center"><img width="649" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_city_level.png"></p>
+
+Compared with the tradition visualization tool (e.g., KDV), NKDV does not overestimate the density values for some geographical events that lie on/are along with the road network. In Figure 2, we generate KDV and NKDV for the 311-call location dataset in the Mission District of San Francisco. Note that KDV tends to provide higher density for the Shotwell Street, which is deemed to be low density using NKDV.
+
+<p align="center"><img width="649" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_city_level_v2.png"></p>
+
 # Installation Guidelines
 ++TODO: add details++
 
