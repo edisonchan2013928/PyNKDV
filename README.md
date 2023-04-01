@@ -11,7 +11,7 @@ Compared with the commonly used kernel density visualization (KDV) tool, NKDV do
 
 <p align="center"><img width="649" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_Street_level_v2.png"></p>
 
-PyNKDV also offers the bandwidth tuning operation for domain experts to generate multiple NKDVs based on different bandwidth parameters (cf. Figure 3) so that they can select the hotspot map with the best quality.
+PyNKDV also offers the bandwidth tuning operation for domain experts to generate multiple NKDVs based on different bandwidth parameters (cf. Figure 3) so that they can select one of the hotspot maps with the best quality.
 
 <p align="center"><img width="849" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_varying_bandwidths.png"></p>
 
