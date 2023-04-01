@@ -13,7 +13,7 @@ Compared with the commonly used kernel density visualization (KDV) tool, NKDV do
 
 PyNKDV also offers the bandwidth tuning operation for domain experts to generate multiple NKDVs based on different bandwidth parameters so that they can select one of the hotspot maps with the best quality. Using Figure 3 as an example, the hotspot map with the bandwidth parameter b = 500m is the most reasonable as it can discover more hidden patterns.
 
-<p align="center"><img width="849" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_varying_bandwidths.png"></p>
+<p align="center"><img width="749" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_varying_bandwidths.png"></p>
 
 # Installation Guidelines
 ++TODO: add details++
