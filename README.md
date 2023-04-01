@@ -7,9 +7,11 @@ Our PyNKDV library can clearly show hotspots in the commonly used geographic inf
 
 <p align="center"><img width="649" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_city_level.png"></p>
 
-Compared with the commonly used kernel density visualization (KDV) tool, NKDV does not overestimate the density values for some geographical events that lie on/are along with the road network. In Figure 2, we generate KDV and NKDV for the 311-call location dataset in the Mission District of San Francisco. Note that KDV tends to provide higher density for the Shotwell Street, which is deemed to be low density using NKDV.
+Compared with the commonly used kernel density visualization (KDV) tool, NKDV does not overestimate the density values for some geographical events that lie on/are along with the road network (e.g., traffic accidents and crime events). In Figure 2, we generate KDV and NKDV for the 311-call location dataset in the Mission District of San Francisco. Note that KDV tends to provide higher density (i.e., not safe) for the Shotwell Street, which is deemed to be low density using NKDV (i.e., safe).
 
 <p align="center"><img width="649" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_Street_level_v2.png"></p>
+
+++TODO: bandwidth tuning++
 
 # Installation Guidelines
 ++TODO: add details++
