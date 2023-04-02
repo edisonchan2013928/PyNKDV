@@ -66,7 +66,7 @@ sys.path
          '/Users/patrick/Library/Application Support/QGIS/QGIS3/profiles/default/python']
 ```
 # How to use PyNKDV?
-### 1. Import our library PyNKDV, and copy the path in the Step 7 of the "Installation Guidelines" into the parameter of the method setPath.
+### 1. Import our library PyNKDV, and copy the path from the Step 7 of the "Installation Guidelines" into the parameter of the method setPath.
 ```python
 from pynkdv.PyNKDV import *
 
@@ -76,7 +76,7 @@ setPath(['/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9',
          '/Users/patrick/Library/Application Support/QGIS/QGIS3/profiles/default/python'])
 ```
 
-### 2. Get the road data from the data file.
+### 2. Map all data points from a data file into a road network.
 ```
 """ 
 the file format (longitude, lattitude):
@@ -90,7 +90,7 @@ map_data = map_road_network(data_file)
 Required arguments
 > data_file: the name of the data file
 
-### 3. Create the PyNKDV object and compute.
+### 3. Create the PyNKDV object and compute the NKDV.
 ```
 model = PyNKDV(map_data, bandwidth=1000, lixel_size=10, num_threads=8)
 results = model.compute()
