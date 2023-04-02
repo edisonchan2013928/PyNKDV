@@ -15,11 +15,112 @@ PyNKDV also offers the bandwidth tuning operation for domain experts to generate
 
 <p align="center"><img width="749" alt="03e58de5950a5d503b73952e8a3bbd1" src="San_Francisco_varying_bandwidths.png"></p>
 
-# Installation Guidelines
-++TODO: add details++
+# Installation Guidelines:
 
-# How to Use PyNKDV?
-++TODO: add details++
+### 1. Create a conda environment.
+```
+(base) ~ % conda create -n pynkdv python=3.9
+```
+### 2. Activate the environment
+```
+(base) ~ % conda activate pynkdv
+```
+
+### 3. Install qgis in conda environment
+**3.1 For Windows, We recommend using mamba to install qgis.**
+
+3.1.1 Install mamba through conda
+
+`(pynkdv) C:\Windows>conda install mamba -n base -c conda-forge`
+
+`(pynkdv) C:\Windows>mamba install -c conda-forge qgis=3.28.2`
+
+
+3.1.2 Or you can also download and install mamba miniforge from [https://github.com/conda-forge/miniforge/releases](https://github.com/conda-forge/miniforge/releases). And open miniforge prompt after installing it.
+
+`(base) C:\Windows>conda activate pynkdv`
+`(pynkdv) C:\Windows>mamba install -c conda-forge qgis=3.28.2`
+
+**3.2 For MacOS**
+
+`(pynkdv) ~ % conda install -c conda-forge qgis`
+
+### 4. Install dependencies
+`(pynkdv) ~ % conda install -c conda-forge osmnx`
+
+### 5. Open QGIS GUI
+
+`(pynkdv) ~ % qgis`
+### 6. Open the python console in qgis by clicking plugin and python console in the menu and get the system path from QGIS
+```
+import sys
+sys.path
+# the result should be a list like this
+['/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9',
+         '/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9/lib-dynload',
+         '/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9/site-packages',
+         '/Users/patrick/Library/Application Support/QGIS/QGIS3/profiles/default/python']
+```
+# How to use PyNKDV
+### 1. import pyNKDV, and copy the path in the previous step into the parameter of the method setPath. 
+```python
+from pynkdv.PyNKDV import *
+
+setPath(['/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9',
+         '/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9/lib-dynload',
+         '/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9/site-packages',
+         '/Users/patrick/Library/Application Support/QGIS/QGIS3/profiles/default/python'])
+```
+
+### 2. Get the road data from the data file.
+```
+""" 
+the file format (longitude, lattitude):
+-122.4253831 37.77549282
+-122.383407840884 37.726741475223
+-122.423049926758 37.793933868408
+...
+"""
+map_data = map_road_network(data_file)
+```
+Required arguments
+> data_file: the name of the data file
+
+### 3. Create the PyNKDV object and compute.
+```
+model = PyNKDV(map_data, bandwidth=1000, lixel_size=10, num_threads=8)
+results = model.compute()
+```
+Required arguments
+> map_data: The map_data we get from the previous step.
+
+Optional arguments
+> bandwidth: the spatial bandwidth (in terms of meters), default is 1000.
+> 
+> lixel_size: the length of the lixel (line segment), default is 10.
+> 
+> num_threads: the number of threads, default is 8.
+
+### 4. Output the result to a shapefile
+```python
+output(results, output_file_name)
+```
+Required arguments
+> results: the results from the previous step.
+ 
+> output_file_name: The filename of the output.
+
+# Example:
+```python
+from pynkdv_conda.pynkdv import *
+
+setPath(['/Applications/QGIS.app/Contents/Resources/python', '/Applications/QGIS.app/Contents/Resources/python/plugins', '/Applications/QGIS.app/Contents/Resources/python/plugins/processing'])
+
+map_data = map_road_network('San_Francisco_clean.csv')
+model = PyNKDV(map_data, bandwidth=1000, lixel_size=10, num_threads=8)
+results = model.compute()
+output(results, 'output-test1')
+```
 
 # PyNKDV is Fast!
 ++TODO: add details++
