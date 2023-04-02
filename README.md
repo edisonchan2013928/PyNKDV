@@ -66,7 +66,7 @@ sys.path
          '/Users/patrick/Library/Application Support/QGIS/QGIS3/profiles/default/python']
 ```
 # How to use PyNKDV?
-### 1. Import our library PyNKDV, and copy the path in the Step 6 of the "Installation Guidelines" into the parameter of the method setPath.
+### 1. Import our library PyNKDV, and copy the path in the Step 7 of the "Installation Guidelines" into the parameter of the method setPath.
 ```python
 from pynkdv.PyNKDV import *
 
