@@ -90,7 +90,7 @@ map_data = map_road_network(data_file)
 Required arguments
 > data_file: the name of the data file
 
-### 3. Create the PyNKDV object and compute the NKDV.
+### 3. Create a PyNKDV object (by setting different parameters) and compute a single NKDV.
 ```
 model = PyNKDV(map_data, bandwidth=1000, lixel_size=10, num_threads=8)
 results = model.compute()
