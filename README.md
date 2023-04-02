@@ -21,13 +21,13 @@ PyNKDV also offers the bandwidth tuning operation for domain experts to generate
 ```
 (base) ~ % conda create -n pynkdv python=3.9
 ```
-### 2. Activate the environment
+### 2. Activate the environment.
 ```
 (base) ~ % conda activate pynkdv
 ```
 
-### 3. Install qgis in conda environment
-**3.1 For Windows, We recommend using mamba to install qgis.**
+### 3. Install QGIS in conda environment.
+**3.1 For Win64, we recommend using mamba to install QGIS. You can choose either 3.1.1 or 3.1.2.**
 
 3.1.1 Install mamba through conda
 
@@ -36,22 +36,26 @@ PyNKDV also offers the bandwidth tuning operation for domain experts to generate
 `(pynkdv) C:\Windows>mamba install -c conda-forge qgis=3.28.2`
 
 
-3.1.2 Or you can also download and install mamba miniforge from [https://github.com/conda-forge/miniforge/releases](https://github.com/conda-forge/miniforge/releases). And open miniforge prompt after installing it.
+3.1.2 You can also download and install mamba miniforge from [https://github.com/conda-forge/miniforge/releases](https://github.com/conda-forge/miniforge/releases). Open miniforge prompt after installing it.
 
 `(base) C:\Windows>conda activate pynkdv`
+
 `(pynkdv) C:\Windows>mamba install -c conda-forge qgis=3.28.2`
 
 **3.2 For MacOS**
 
 `(pynkdv) ~ % conda install -c conda-forge qgis`
 
-### 4. Install dependencies
+### 4. Install dependencies.
 `(pynkdv) ~ % conda install -c conda-forge osmnx`
 
-### 5. Open QGIS GUI
+### 5. Install PyNKDV.
+`(pynkdv) ~ % pip install pynkdv`
+
+### 6. Open QGIS GUI.
 
 `(pynkdv) ~ % qgis`
-### 6. Open the python console in qgis by clicking plugin and python console in the menu and get the system path from QGIS
+### 7. Open the python console in QGIS by clicking plugin and python console in the menu and get the system path from QGIS.
 ```
 import sys
 sys.path
@@ -61,8 +65,8 @@ sys.path
          '/Users/patrick/opt/anaconda3/envs/pynkdv/lib/python3.9/site-packages',
          '/Users/patrick/Library/Application Support/QGIS/QGIS3/profiles/default/python']
 ```
-# How to use PyNKDV
-### 1. import pyNKDV, and copy the path in the previous step into the parameter of the method setPath. 
+# How to use PyNKDV?
+### 1. Import our library PyNKDV, and copy the path in the Step 6 of the "Installation Guidelines" into the parameter of the method setPath.
 ```python
 from pynkdv.PyNKDV import *
 
@@ -101,7 +105,7 @@ Optional arguments
 > 
 > num_threads: the number of threads, default is 8.
 
-### 4. Output the result to a shapefile
+### 4. Output the result to a shapefile.
 ```python
 output(results, output_file_name)
 ```
