@@ -26,7 +26,7 @@ PyNKDV also offers the bandwidth tuning operation for domain experts to generate
 (base) ~ % conda activate pynkdv
 ```
 
-### 3. Install QGIS in conda environment.
+### 3. Install QGIS in the conda environment.
 **3.1 For Win64, we recommend using mamba to install QGIS. You can choose either 3.1.1 or 3.1.2.**
 
 3.1.1 Install mamba through conda
@@ -105,7 +105,7 @@ Optional arguments
 > 
 > num_threads: the number of threads, default is 8.
 
-### 4. Output the result to a shapefile.
+### 4. Output the visualization results to a shapefile.
 ```python
 output(results, output_file_name)
 ```
