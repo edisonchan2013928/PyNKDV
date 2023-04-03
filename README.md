@@ -126,6 +126,15 @@ results = model.compute()
 output(results, 'output-test1')
 ```
 
+# Display the Visualization Results in QGIS
+After you have obtained a shape file from the output function, you can run the python file "Display_results_QGIS.py" in the python console of QGIS to display the visualization results (from the shape file). Note that you need to change the "path" variable to the directory that contains the shape file.
+
+```python
+path = '/Users/patrick/output_test1.shp'
+```
+
+Please read the comments clearly in the "Display_results_QGIS.py" file for setting the colors in the visualization.
+
 # PyNKDV is Fast!
 ++TODO: add details++
 
