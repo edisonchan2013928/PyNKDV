@@ -36,7 +36,7 @@ PyNKDV also offers the bandwidth tuning operation for domain experts to generate
 `(pynkdv) C:\Windows>mamba install -c conda-forge qgis=3.28.2`
 
 
-3.1.2 You can also download and install mamba miniforge from [https://github.com/conda-forge/miniforge/releases](https://github.com/conda-forge/miniforge/releases). Open miniforge prompt after installing it.
+3.1.2 You can also download and install mamba miniforge from [https://github.com/conda-forge/miniforge/releases](https://github.com/conda-forge/miniforge/releases). Open miniforge prompt and use it in the following steps after installing it.
 
 `(base) C:\Windows>conda activate pynkdv`
 
