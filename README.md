@@ -136,7 +136,7 @@ path = '/Users/patrick/output_test1.shp'
 Please read the comments clearly in the "Display_results_QGIS.py" file for setting the colors of the visualization.
 
 # Datasets
-We provide the San Francisco 311-call dataset (obtained from this link https://data.sfgov.org/City-Infrastructure/311-Cases/vw6y-z8j6 and has been further processed by us), named as [San_Francisco_clean.csv](https://www.comp.hkbu.edu.hk/~edisonchan/San_Francisco_clean.csv), for testing. If you would like to use other datasets, please follow the same data format as "San_Francisco_clean.csv". Here, we also provide other links of datasets for testing.
+We provide the San Francisco 311-call dataset (obtained from this link https://data.sfgov.org/City-Infrastructure/311-Cases/vw6y-z8j6 and has been further processed by us), named as [San_Francisco_clean.csv](https://www.comp.hkbu.edu.hk/~edisonchan/San_Francisco_clean.csv), for testing. If you would like to use other datasets, please follow the same data format as "San_Francisco_clean.csv". Here, we also provide other links of datasets [a-d] for testing.
 
 [a] NYC Open Data. https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95. <br />
 [b] Chicago Open Data. https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2. <br />
