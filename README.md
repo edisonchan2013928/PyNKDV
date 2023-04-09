@@ -136,9 +136,9 @@ path = '/Users/patrick/output_test1.shp'
 Please read the comments clearly in the "Display_results_QGIS.py" file for setting the colors of the visualization.
 
 # PyNKDV is Fast!
-We compare the efficiency of our PyNKDV library with the state-of-the-art library, spNetwork, for generating NKDV. To conduct this experiment, we first sample the San Francisco dataset with different percentages, which are 0.1%, 0.2%, 0.5%, 1%, 2%, 5%, 10%, 20%, 50%, and 100% (original one), and then test the response time of these two libraries in these reduced datasets. Note that PyNKDV can achieve at least two-order-of-magnitude speedup compared with spNetwork. Observe from Figure 4 that spNetwork crashes if we use this library for the reduced dataset with the sampling ratio 0.5%. Therefore, this library cannot be scalable to large-scale (or even moderate-scale) datasets. As a remark, since we cannot get the license of SANET (another library for generating NKDV), we omit its performance in Figure 4.
+We compare the efficiency of our PyNKDV library with the state-of-the-art library, spNetwork, for generating NKDV. To conduct this experiment, we first sample the San Francisco dataset with different percentages, which are 0.1%, 0.2%, 0.5%, 1%, 2%, 5%, 10%, 20%, 50%, and 100% (original one), and then test the response time of these two libraries in these reduced datasets. Observe from Figure 4 that PyNKDV can achieve at least two-order-of-magnitude speedup compared with spNetwork. Moreover, spNetwork crashes if we use this library for the reduced dataset with the sampling ratio 0.5%. Therefore, spNetwork cannot be scalable to large-scale (or even moderate-scale) datasets. As a remark, since we cannot get the license of SANET (another library for generating NKDV), we omit its performance in Figure 4.
 
-<p align="center"><img width="349" alt="03e58de5950a5d503b73952e8a3bbd1" src="response_time_comparison.png"></p>
+<p align="center"><img width="549" alt="03e58de5950a5d503b73952e8a3bbd1" src="response_time_comparison_v2.png"></p>
 
 # Project Members:
 [Prof. (Edison) Tsz Nam Chan](https://www.comp.hkbu.edu.hk/~edisonchan/), Hong Kong Baptist University<br />
