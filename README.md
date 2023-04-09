@@ -135,8 +135,16 @@ path = '/Users/patrick/output_test1.shp'
 
 Please read the comments clearly in the "Display_results_QGIS.py" file for setting the colors of the visualization.
 
+# Datasets
+We provide the San Francisco 311-call dataset (obtained from this link https://data.sfgov.org/City-Infrastructure/311-Cases/vw6y-z8j6 and has been further processed by us), named as San_Francisco_clean.csv, for testing. If you would like to use other datasets. Please follow the same data format as "San_Francisco_clean.csv". Here, we also provide other links of datasets for testing.
+
+[a] NYC Open Data. https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95. <br />
+[b] Chicago Open Data. https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2. <br />
+[c] Atlanta Open Data. http://opendata.atlantapd.org/. <br />
+[d] Seattle Open Data. https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5. <br />
+
 # PyNKDV is Fast!
-We compare the efficiency of our PyNKDV library with the state-of-the-art library, spNetwork, for generating NKDV. To conduct this experiment, we first sample the San Francisco 311-call dataset with different percentages, which are 0.1%, 0.2%, 0.5%, 1%, 2%, 5%, 10%, 20%, 50%, and 100% (original one), and then test the response time of these two libraries in these reduced datasets. Observe from Figure 4 that PyNKDV can achieve at least two-order-of-magnitude speedup compared with spNetwork. Moreover, spNetwork crashes if we use this library for the reduced dataset with the sampling ratio 0.5%. Therefore, spNetwork cannot be scalable to large-scale (or even moderate-scale) datasets. As a remark, since we cannot get the license of SANET (another library for generating NKDV), we omit its performance in Figure 4.
+We compare the efficiency of our PyNKDV library with the state-of-the-art library, spNetwork, for generating NKDV. To conduct this experiment, we first sample the San Francisco 311-call dataset ([San_Francisco_clean.csv](https://www.comp.hkbu.edu.hk/~edisonchan/San_Francisco_clean.csv)) with different percentages, which are 0.1%, 0.2%, 0.5%, 1%, 2%, 5%, 10%, 20%, 50%, and 100% (original one), and then test the response time of these two libraries in these reduced datasets. Observe from Figure 4 that PyNKDV can achieve at least two-order-of-magnitude speedup compared with spNetwork. Moreover, spNetwork crashes if we use this library for the reduced dataset with the sampling ratio 0.5%. Therefore, spNetwork cannot be scalable to large-scale (or even moderate-scale) datasets. As a remark, since we cannot get the license of SANET (another library for generating NKDV), we omit its performance in Figure 4.
 
 <p align="center"><img width="549" alt="03e58de5950a5d503b73952e8a3bbd1" src="response_time_comparison_v2.png"></p>
 
