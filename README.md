@@ -159,6 +159,7 @@ Mr. Pak Lon Ip, Universiy of Macau<br />
 [Prof. Byron Choi](https://www.comp.hkbu.edu.hk/~bchoi/), Hong Kong Baptist University<br />
 [Prof. Reynold Cheng](https://i.cs.hku.hk/~ckcheng/), The University of Hong Kong<br />
 [Prof. (Ken) Man Lung Yiu](https://www4.comp.polyu.edu.hk/~csmlyiu/), Hong Kong Polytechnic University<br />
+Mr. Bojian Zhu, Xidian University (now in Hong Kong Baptist University)<br />
 Dr. Zhe Li, Alibaba Cloud<br />
 Mr. Kaiyan Zhao, Universiy of Macau<br />
 Mr. Ye Li, University of Macau<br />
