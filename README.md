@@ -149,7 +149,7 @@ We compare the efficiency of our PyNKDV library with the state-of-the-art librar
 <p align="center"><img width="549" alt="03e58de5950a5d503b73952e8a3bbd1" src="response_time_comparison_v2.png"></p>
 
 # Project Members:
-[Prof. (Edison) Tsz Nam Chan](https://www.comp.hkbu.edu.hk/~edisonchan/), Hong Kong Baptist University<br />
+[Prof. (Edison) Tsz Nam Chan](https://www.comp.hkbu.edu.hk/~edisonchan/), Shenzhen University<br />
 Mr. Rui Zang, Hong Kong Baptist University<br />
 Mr. Pak Lon Ip, Universiy of Macau<br />
 [Prof. (Ryan) Leong Hou U](https://www.fst.um.edu.mo/personal/ryanlhu/), Universiy of Macau<br />
